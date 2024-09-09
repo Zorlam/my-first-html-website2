@@ -1,0 +1,24 @@
+<!Doctype html>
+<html lang="en>"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Page</title>
+</head>
+<body>
+    <h2>Login To Your Account</h2>
+    <form action="/login" method="POST"> 
+        <label for="username">Username:</label><br>
+        <input type="text" id="username"name="username" placeholder="Enter your username" required min="5" max="15"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" max="15"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"
+        required min="18" max="100" placeholder="=Please enter your age"><br><br>
+        <input type="checkbox" id="remember" name="remeber">
+        <label  for="remember">Rememeber me?</label><br><br>
+        <button type="submit">Login</button></form>
+        <p>Forgot your password? <a href="/forgot-password">Click here to reset your password you peanut brain!</a></p>
+        <p>Don't have an account? <a href="register">Sign up yo dumb ass here!</a></p>
+</body>
+</html>
